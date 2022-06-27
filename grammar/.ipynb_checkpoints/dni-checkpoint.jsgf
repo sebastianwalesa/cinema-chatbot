@@ -1,0 +1,13 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar dni;
+
+public <dni> = [<prosba>] [<dzien_rezerwacji>] [<godzina_rezerwacji>];
+
+<prosba> = (chce | chcialbym | chcialabym | poprosze) [zarezerwowac];
+
+<dzien_rezerwacji> = na <dzien> {dzien};
+
+<dzien> = (dzisiaj | jutro | poniedziałek | wtorek | srode | czwartek | piatek | sobotę | niedziele) | <data>;
+
+<data> = (8|9|10|11|12|13|14|15) [czerwca]; 

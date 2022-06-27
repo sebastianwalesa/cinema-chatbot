@@ -1,0 +1,9 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar cancel;
+
+public <odwolaj> =  <prosba> <anulacja>;
+
+<prosba> = chce | chcialbym | chcialabym | prosze;
+
+<anulacja> = odwolac | zrezygnowac | anulowac ([bilety]|[bilet]|[z biletow]|[rezerwacje]|[z rezerwacji]);

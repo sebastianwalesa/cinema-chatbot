@@ -1,0 +1,9 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar repertuar;
+
+public <repertuar> =  <prosba> [aktualny | obecny | aktualnie | obecnie | teraz] ([repertuar] | [repertuarze]);
+
+<prosba> = moge prosic [o] | prosze podac | podaj | jaki jest | co [teraz] gracie | co leci | jakie sa [dostepne] (filmy | seanse) | jakie filmy gracie | jakie [sa] (seanse | filmy) w;
+
+

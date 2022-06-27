@@ -1,0 +1,29 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar book;
+
+public <rezerwuj> = <prosba> [<ilosc_biletow>] [<tytul_filmu>] [<dzien_rezerwacji>] [<godzina_rezerwacji>];
+
+<prosba> = (chce | chcialbym | chcialabym | poprosze) [zarezerwowac];
+
+<ilosc_biletow> = <liczba> {ilosc} (bilety | biletow | bilet);
+
+<liczba> = jeden | dwa | trzy | cztery | piec | szesc | siedem | osiem | dziewiec | dziesiec |1|2|3|4|5|6|7|8|9|10;
+
+<tytul_filmu> = na [film] <tytul> {tytul};
+
+<tytul> = Batman | Batmana | Uncharted | Pitbull | Ambulans | Bunkier strachu | Corka | Corke | Inni ludzie | Śmierć na Nilu | Skarb Mikołajka;
+
+<dzien_rezerwacji> = na <dzien> {dzien};
+
+<dzien> = (dzisiaj | jutro | poniedziałek | wtorek | srode | czwartek | piatek | sobotę | niedziele) | <data>;
+
+<data> = (8|9|10|11|12|13|14|15) [czerwca]; 
+
+<godzina_rezerwacji> = na [godzinę] <godzina_z_minutami> {godzina};
+
+<godzina_z_minutami> = <godzina> [<minuty>];
+
+<godzina> = 10|11|12|13|14|15|16|17|18|19|20|21|22|23 | dziesiata | jedenasta | dwunasta | trzynasta | czternasta | pietnasta | szesnasta | siedemnasta | osiemnasta | dziewietnasta | dwudziesta;
+
+<minuty> = pietnaście | trzydzieści | czterdziesci piec| 15 | 30 | 45;

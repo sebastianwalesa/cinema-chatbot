@@ -1,0 +1,7 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar hello;
+
+public <hello> = <words_hello>;
+
+<words_hello> = czesc | hej | witaj | hey | hello | dzień dobry | siema | siemanko;

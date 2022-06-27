@@ -1,0 +1,7 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar bye;
+
+public <bye> = <words_bye>;
+
+<words_bye> = do uslyszenia | do widzenia | do zobaczenia | na razie | bye | zegnaj | nara | musze juz isc;

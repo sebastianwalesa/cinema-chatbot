@@ -1,0 +1,11 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar tyt_filmu;
+
+public <tyt_filmu> = [<prosba>] [<tytul_filmu>];
+
+<prosba> = (chce | chcialbym | chcialabym | poprosze) [zarezerwowac] [bilet | bilety];
+
+<tytul_filmu> = [na] [film] <tytul> {tytul};
+
+<tytul> = Batman | Batmana | Uncharted | Pitbull | Ambulans | Bunkier strachu | Corka | Corke | Inni ludzie | Smierc na Nilu | Skarb Mikolajka;

@@ -1,0 +1,7 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar miejsca;
+
+public <miejsca> = [z | na | w]  <miejsce> {miejsce};
+
+<miejsce> = dole | gorze | srodku | tylu | blizej | przodu | tyl | przod | srodek;

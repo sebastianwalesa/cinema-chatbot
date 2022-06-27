@@ -1,0 +1,9 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar zapytanie;
+
+public <zapytanie> =  <pytanie>;
+
+<pytanie> = mam pytanie | jakie sa ([ulgi] | [ceny]) | o czym ([to] | [jest]) [<tytul>];
+
+<tytul> = Batman | Batmana | Uncharted | Pitbull | Ambulans | Bunkier strachu | Corka | Corke | Inni ludzie | Smierc na Nilu | Skarb Mikolajka;

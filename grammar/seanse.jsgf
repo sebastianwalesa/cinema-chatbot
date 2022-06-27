@@ -1,0 +1,9 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar seanse;
+
+public <seanse> =  <godz>;
+
+<godz> = o ktorej ([gracie] | [jest] | [leci]) [<tytul>]| w jakich godzinach ([gracie] | [leci] | [jest])  [<tytul>] | jakie [sa] [dostepne] [seanse];
+
+<tytul> = Batman | Batmana | Uncharted | Pitbull | Pitbulla | Pitbula | Ambulans | Bunkier strachu | Corka | Corke | Inni ludzie | Smierc na Nilu | Skarb Mikolajka;
